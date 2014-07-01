@@ -1,0 +1,9 @@
+count = 3
+def statement(x,):
+        print(" You have ", x, "more tries")
+        input ("Guess my name: ")
+while count > 0 and statement(count)!= "Hue":
+        count = count - 1
+if count >0:
+        print ("You win")
+    

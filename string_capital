@@ -1,0 +1,15 @@
+def upper(string):
+    final = ""
+    for char in string:
+        if "a" <= char <= "z":
+            lower_loc = ord(char) - ord("a")
+            capital_loc = lower_loc + ord("A")
+            char = chr(capital_loc)
+        final = final + char
+    return final
+
+print (upper("Come at me"))
+        
+
+            
+            

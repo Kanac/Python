@@ -1,0 +1,44 @@
+def print_menu():
+    print('1. Print Phone Numbers')
+    print('2. Add a Phone Number')
+    print('3. Remove a Phone Number')
+    print('4. Lookup a Phone Number')
+    print('5. Quit')
+    print()
+numbers = {}
+choice = 0
+numberlist = 0
+print_menu()
+while choice != 5:
+    print ()
+    choice = int(input("Select an option (1-5): "))
+    if choice == 1:
+        if numberlist > 0:
+            for x in numbers:
+                print ("Name: ", x, "\t  Number: ", numbers[x])
+                print ()
+        else:
+            print ("wtf nothing in your list")
+    elif choice == 2:
+        name = input("What's the name of the person?: ")
+        phone = input("What's the person's phone number?: ")
+        numbers[name] = phone
+        numberlist = numberlist + 1
+    elif choice == 3:
+        name = input("What's the name of the person to delete?: ")
+        if name in numbers:
+            del numbers[name]
+            numberlist = numberlist -1
+        else:
+            print ("No such person")
+    elif choice == 4:
+        name = input("What's the name of the person?: ")
+        if name in numbers:
+            print ("Name:", name, "\tPhone Number: ", numbers[name])
+        else:
+            print (" No such person")
+    elif choice !=5:
+        print ()
+
+            
+                   

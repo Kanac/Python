@@ -1,0 +1,15 @@
+def tries(x):
+    print ("You have" ,(x), "tries left")
+
+count = 3
+name = "hue"
+tries (count)
+response = input("Guess my name: ")
+while count > 0 and response != "hue":
+    count = count - 1
+    tries(count)
+    response = input("Guess my name: ")
+if response == name:
+    print ("You win")
+
+
