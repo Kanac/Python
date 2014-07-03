@@ -1,4 +1,4 @@
-list = ["sup", "fuck", "LoL", "lulz"]
+list = ["sup", "duck", "LoL", "lulz"]
 for x in range(len(list)):
     print (len(list))
     if x == len(list) -1:
