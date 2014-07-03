@@ -1,4 +1,4 @@
-#A program that utilises dictionies are filoe I/O to act as a phone list
+# A program that utilises dictionies are filoe I/O to act as a phone list
 def print_phone(numbers):
     print ("Telephone numbers:")
     for k, v in numbers.items():
