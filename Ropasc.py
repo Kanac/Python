@@ -1,3 +1,5 @@
+# My version of Rock Paper Scissors made using Python
+
 import random
 def menu():
     print("1.Rock")
